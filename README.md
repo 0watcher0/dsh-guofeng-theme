@@ -2,10 +2,7 @@
 
 国风太极主题（DSH Web 皮肤）：太极道君背景图 + 黛青强调色 + 楷体界面，明/暗双模式。
 
-<!-- 预览图占位：请将真实界面截图放入 docs/previews/ 后替换以下示例
-![浅色预览](docs/previews/guofeng-light.png)
-![深色预览](docs/previews/guofeng-dark.png)
--->
+> 预览图待补充：请将真实界面截图放入 `docs/previews/` 后在此处以 Markdown 图片语法引用。
 
 ## 特性
 
