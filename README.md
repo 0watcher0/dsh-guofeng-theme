@@ -2,7 +2,7 @@
 
 国风太极主题（DSH Web 皮肤）：太极道君背景图 + 黛青强调色 + 楷体界面，明/暗双模式。
 
-> 预览图待补充：请将真实界面截图放入 `docs/previews/` 后在此处以 Markdown 图片语法引用。
+![国风太极主题预览](docs/previews/guofeng-preview.png)
 
 ## 特性
 
@@ -45,6 +45,7 @@ client.js         浏览器半：在 <head> 注入样式表链接（幂等）
 assets/guofeng.css  国风样式：背景/强调色/楷体/半透明面板/明暗双模式
 assets/taiji.jpg    压缩后的背景图（原图在 OneDrive，未随仓库分发）
 cordis.patch.yml  bundle 声明（row id: dsh-guofeng-theme）
+docs/previews/    真实界面预览图
 ```
 
 ## License
