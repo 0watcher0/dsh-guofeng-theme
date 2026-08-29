@@ -1,0 +1,109 @@
+/* ============================================================
+   dsh-guofeng-theme — 国风主题样式表
+   太极道君背景图 · 黛青强调色 · 楷体界面 · 半透明面板
+   亮色 / 暗色两套参数，随 body[data-ds-dark-theme] 自动切换。
+   所有覆盖均加 !important，压过基础样式表与内联变量。
+   ============================================================ */
+
+/* ---------- 全局字体：楷体优先 ---------- */
+body {
+  --dsw-font-family: 'KaiTi', 'STKaiti', '楷体', '华文楷体', 'Kaiti SC',
+    'Noto Serif CJK SC', 'Noto Serif SC', 'Source Han Serif SC', 'SimSun',
+    -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif !important;
+}
+
+/* ---------- 背景：太极道君 · 亮色（宣纸罩） ---------- */
+body {
+  --dsw-alias-bg-base:
+    linear-gradient(rgba(250, 246, 238, 0.46), rgba(250, 246, 238, 0.46)),
+    url('/guofeng/taiji.jpg') center / cover no-repeat fixed,
+    #ece5d6 !important;
+}
+
+/* ---------- 背景：太极道君 · 暗色（墨色罩） ---------- */
+body[data-ds-dark-theme] {
+  --dsw-alias-bg-base:
+    linear-gradient(rgba(16, 14, 10, 0.56), rgba(16, 14, 10, 0.56)),
+    url('/guofeng/taiji.jpg') center / cover no-repeat fixed,
+    #17130d !important;
+}
+
+/* ---------- 半透明面板（背景透出）· 亮色 ---------- */
+body {
+  --dsw-alias-bg-layer-1: rgba(253, 250, 244, 0.80) !important;
+  --dsw-alias-bg-layer-2: rgba(251, 247, 239, 0.88) !important;
+  --dsw-alias-bg-layer-3: rgba(255, 252, 247, 0.95) !important;
+  --dsw-specific-sidebar-fill: rgba(251, 247, 239, 0.76) !important;
+  --dsw-specific-sidebar-nav-item-hover: rgba(58, 96, 121, 0.10) !important;
+  --dsw-specific-sidebar-nav-item-active: rgba(58, 96, 121, 0.16) !important;
+}
+
+/* ---------- 半透明面板 · 暗色 ---------- */
+body[data-ds-dark-theme] {
+  --dsw-alias-bg-layer-1: rgba(25, 22, 17, 0.72) !important;
+  --dsw-alias-bg-layer-2: rgba(31, 27, 21, 0.82) !important;
+  --dsw-alias-bg-layer-3: rgba(38, 33, 26, 0.93) !important;
+  --dsw-specific-sidebar-fill: rgba(22, 19, 14, 0.70) !important;
+  --dsw-specific-sidebar-nav-item-hover: rgba(150, 186, 212, 0.10) !important;
+  --dsw-specific-sidebar-nav-item-active: rgba(150, 186, 212, 0.18) !important;
+}
+
+/* ---------- 黛青强调色 ---------- */
+body {
+  --dsw-alias-brand-primary: #3a6079 !important;
+  --dsw-alias-brand-primary-invert: #dce9f0 !important;
+  --dsw-alias-button-primary-hover: #31546b !important;
+  --dsw-alias-brand-text: #ffffff !important;
+}
+body[data-ds-dark-theme] {
+  --dsw-alias-brand-primary: #82a9c5 !important;
+  --dsw-alias-brand-primary-invert: #1d2c38 !important;
+  --dsw-alias-button-primary-hover: #97b8d0 !important;
+  --dsw-alias-brand-text: #142430 !important;
+}
+
+/* ---------- 墨色边框 ---------- */
+body {
+  --dsw-alias-border-l1: rgba(48, 43, 34, 0.12) !important;
+  --dsw-alias-border-l2: rgba(48, 43, 34, 0.20) !important;
+  --dsw-alias-border-l3: rgba(48, 43, 34, 0.28) !important;
+  --dsw-alias-border-l4: rgba(48, 43, 34, 0.38) !important;
+  --dsw-alias-border-l2-darkmode-thin: rgba(48, 43, 34, 0.20) !important;
+}
+body[data-ds-dark-theme] {
+  --dsw-alias-border-l1: rgba(232, 222, 204, 0.12) !important;
+  --dsw-alias-border-l2: rgba(232, 222, 204, 0.18) !important;
+  --dsw-alias-border-l3: rgba(232, 222, 204, 0.26) !important;
+  --dsw-alias-border-l4: rgba(232, 222, 204, 0.36) !important;
+  --dsw-alias-border-l2-darkmode-thin: rgba(232, 222, 204, 0.14) !important;
+}
+
+/* ---------- 文字：宣纸墨色微调 ---------- */
+body {
+  --dsw-alias-label-primary: #26221b !important;
+  --dsw-alias-label-secondary: #57503f !important;
+  --dsw-alias-label-tertiary: #857c68 !important;
+  --dsw-alias-label-caption: #857c68 !important;
+  --dsw-alias-label-dimmed: #a89d86 !important;
+}
+body[data-ds-dark-theme] {
+  --dsw-alias-label-primary: #ece4d2 !important;
+  --dsw-alias-label-secondary: #c2b8a2 !important;
+  --dsw-alias-label-tertiary: #94896f !important;
+  --dsw-alias-label-caption: #94896f !important;
+  --dsw-alias-label-dimmed: #6f6650 !important;
+}
+
+/* ---------- 墨褐滚动条 ---------- */
+body {
+  --dsw-alias-scrollbar-bg-l1: rgba(64, 57, 44, 0.32) !important;
+  --dsw-alias-scrollbar-bg-l2: rgba(64, 57, 44, 0.40) !important;
+  --dsw-alias-scrollbar-hover-l1: rgba(64, 57, 44, 0.52) !important;
+  --dsw-alias-scrollbar-hover-l2: rgba(64, 57, 44, 0.60) !important;
+}
+body[data-ds-dark-theme] {
+  --dsw-alias-scrollbar-bg-l1: rgba(224, 213, 190, 0.28) !important;
+  --dsw-alias-scrollbar-bg-l2: rgba(224, 213, 190, 0.34) !important;
+  --dsw-alias-scrollbar-hover-l1: rgba(224, 213, 190, 0.46) !important;
+  --dsw-alias-scrollbar-hover-l2: rgba(224, 213, 190, 0.54) !important;
+}
