@@ -1,0 +1,47 @@
+{
+  "name": "dsh-guofeng-theme",
+  "version": "1.0.0",
+  "description": "国风太极主题：太极道君背景图 + 黛青强调色 + 楷体界面，明/暗双模式（DSH Web 皮肤）。Guofeng Taiji skin for DSH Web: taiji master background, dark-cyan accent, KaiTi interface, light/dark modes.",
+  "type": "module",
+  "main": "index.js",
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-ai",
+    "cordis",
+    "theme",
+    "skin",
+    "guofeng",
+    "taiji",
+    "plugin"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "assets",
+    "LICENSE",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}
