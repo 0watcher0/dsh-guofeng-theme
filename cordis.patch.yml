@@ -1,0 +1,6 @@
+# 国风太极主题（dsh-guofeng-theme）bundle 声明。
+# 由 profile 的 dsh.profile.bundles 在启动时应用，把插件本体作为 host 端 Cordis
+# 插件加载（注册背景图/样式表路由）；浏览器半经 dsh.client 由 Web 端加载。
+- insert:
+    - id: dsh-guofeng-theme
+      name: dsh-guofeng-theme
